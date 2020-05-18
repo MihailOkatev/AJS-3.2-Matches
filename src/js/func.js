@@ -8,8 +8,8 @@ export default function sortByHealth(sqaude) {
       return -1;
     }
     if (a.health === b.health) {
-      let aName = a.name;
-      let bName = b.name;
+      const aName = a.name;
+      const bName = b.name;
       if (aName > bName) {
         return 1;
       }
@@ -17,6 +17,7 @@ export default function sortByHealth(sqaude) {
         return -1;
       }
     }
+    return 'finish';
   });
   return copyOfSquade;
 }
